@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='pageDisplayer'>
         <nav>
           <Link to="/">Home</Link>
           <Link to="/my-memos">My Memos</Link>
