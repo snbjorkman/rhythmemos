@@ -3,4 +3,5 @@ from . import views
 
 urlpatterns = [
     path('', view=views.index, name="index"),
+    path('memos/', view=views.saveMemo, name="save memo")
 ]

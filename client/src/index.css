@@ -121,3 +121,9 @@ button:hover{
 .memoNameBox{
   border-radius: 5px;
 }
+
+#about{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+}
