@@ -1,6 +1,7 @@
 {% extends "registration/base.html"%}
 
 {% block content %}
+<h1>Rhythmemos</h1>
 <form action="/registration/sign_in/" method="post">
   {% csrf_token %}
   <div>
@@ -9,14 +10,17 @@
       <input type="email" name="email">
     </label>
   </div>
+  <br>
   <div>
     <label>
       Password
       <input type="password" name="password">
     </label>
   </div>
+  <br>
   <button>Sign In</button>
 
 </form>
+<br>
 <a href="/registration/sign_up/">Create New Account</a>
 {% endblock %}

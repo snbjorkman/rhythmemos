@@ -1,32 +1,38 @@
 {% extends "registration/base.html"%}
 
 {% block content %}
+<h1>Create New Account</h1>
 <form action="/registration/sign_up/" method="post">
   {% csrf_token %}
   <div>
+    <br>
     <label>
       First Name
       <input type="text" name="first_name">
     </label>
   </div>
+  <br>
   <div>
     <label>
       Last Name
       <input type="text" name="last_name">
     </label>
   </div>
+  <br>
   <div>
     <label>
       Email
       <input type="email" name="email">
     </label>
   </div>
+  <br>
   <div>
     <label>
       Password
       <input type="password" name="password">
     </label>
   </div>
+  <br>
   <button>Create Account</button>
 </form>
 {% endblock %}

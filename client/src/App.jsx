@@ -26,6 +26,7 @@ function App() {
           <Link to="/">Home</Link>
           <Link to="/my-memos">My Memos</Link>
           <Link to="/about">About | How To Use</Link>
+          <button onClick={logout}><p>Logout</p></button>
         </nav> 
         <Outlet />
       </div>
